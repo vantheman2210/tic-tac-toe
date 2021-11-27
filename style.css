@@ -18,13 +18,40 @@ body, html {
   font-weight: bold; 
   padding: 10px 0px 50px 0px; 
   margin-top: 100px;
+} 
+
+#welcome { 
+  display:flex;
+  position:absolute; 
+  width: 480px; 
+  height: 480px; 
+  background-color: #fca311; 
+  margin-top: 336px; 
+  justify-content: center; 
+  align-items: center;
+}  
+
+#welcome-hidden { 
+  display: none;
+  visibility: hidden;
 }
+
+#start {  
+  font-size: 50px;
+  font-family: "Alfa Slab One", Arial, Helvetica, sans-serif;  
+  text-align: center;  
+  font-weight: bold; 
+  letter-spacing: 5px;
+  box-shadow: 0 0 25px #000; 
+  border-radius: 5px;
+} 
 
 #container { 
   display: grid; 
   grid-template-rows: repeat(3, 150px); 
   grid-template-columns: repeat(3, 150px); 
-  background-color: #e5e5e5;
+  background-color: #e5e5e5; 
+  gap: 5px;
 } 
 
 .board {  
@@ -37,7 +64,8 @@ body, html {
   font-family: "Estonia", Arial, Helvetica, sans-serif;
   text-align: center;  
   font-weight: bold;
-  font-size: 170px;
+  font-size: 170px; 
+  
 }  
 
 footer {  
